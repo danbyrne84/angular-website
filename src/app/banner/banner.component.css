@@ -1,0 +1,105 @@
+@keyframes easeIn {
+    0%   {background: red; left: -1000px; }
+    100% {background: red; left: auto; }
+}
+
+/** banner component **/
+div.banner {
+    color: #fff;
+    background: -webkit-radial-gradient(50% 190%,circle cover,#5f5f5f 0%,#545454 50%,#2c2c2c 100%) #444;
+    font-family: 'BebasNeue Regular';
+
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+
+    padding: 0;
+}
+
+/** header **/
+div.banner header {
+    min-height: 20px;
+}
+
+/** content **/
+div.banner div.content {
+    align-content: center;
+    width: 100%;
+
+    text-align: center;
+    vertical-align: center;
+}
+
+/** footer **/
+div.banner > footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: rgba(0,0,0,0.2);
+    bottom: 0;
+}
+
+div.banner > footer > ul,div {
+    display: inline-block;
+}
+
+/** featured should take all remaining space **/
+ul.featured {
+    flex-grow: 1;
+}
+
+div.banner > footer > ul.nav {
+    padding-left: 0;
+}
+
+
+/** navigation  **/
+ul.nav {
+    margin: 0;
+}
+
+ul.nav > li {
+    display: inline-block;
+    padding: 5px;
+
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+    transform: translateY(130%);
+    opacity: 0;
+}
+
+ul.nav > li i {
+    padding-right: 1em; /** spacer between glyphicons and text **/
+}
+
+ul.nav.featured > li {
+    width: 100%;
+    text-align: center;
+}
+
+ul.nav > li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    padding: 2x;
+    padding: 8px 15px;
+}
+
+ul.nav > li a.inactive {
+    cursor: not-allowed;
+}
+
+/** transitions **/
+ul.nav li.visible {
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.content i.glyphicon.glyphicon-home {
+    font-size: 155px;
+    opacity: 0.05;
+    display: inline;
+}

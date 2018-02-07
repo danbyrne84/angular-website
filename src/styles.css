@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'BebasNeue Regular';
+    src: url('/assets/BebasNeue Regular.otf');
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #000000;
+}
+
+h1,h2,h3 {
+    font-family: 'BebasNeue Regular';
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.radial-light {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
+
+    border-radius: 5px;
+}
+
+.pull-right {
+    float: right;
+}
