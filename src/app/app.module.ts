@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { BlogComponent } from './blog/blog.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
