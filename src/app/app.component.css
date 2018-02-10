@@ -1,5 +1,26 @@
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+
+    div.centered {
+        max-width: 100% !important;
+        padding: 0;
+    }
+
+    .nav.nav-right {
+        order: 3;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav.nav-left { 
+        order: 2;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 body {
@@ -37,7 +58,6 @@ body {
     flex: 0 1 auto;
     flex-direction: column;
     flex-wrap: wrap;
-    min-width: 15em;
     max-width: 15em;
 }
 
